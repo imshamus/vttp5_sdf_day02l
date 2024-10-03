@@ -5,6 +5,9 @@ import java.util.List;
 import object.Computer;
 import object.Desktop;
 import object.Laptop;
+import vehicle.Car;
+import vehicle.Truck;
+import vehicle.Vehicle;
 
 public class App {
 public static void main(String[] args) { // use for main function - function that gives output - normally the running one very short, everything done other class folder - the run button
@@ -68,7 +71,15 @@ public static void main(String[] args) { // use for main function - function tha
 
         // run
         // java -cp target App
-        
+        List<Vehicle> vehicles = new ArrayList<>(); // list <vehicle> means list of parent and child vehicles
+        vehicles.add(new Vehicle("1", "BMW", 2017));
+        vehicles.add(new Car("100", "Audi", 1994, "Sedan", 5));
+        vehicles.add(new Truck("999", "Toyota", 2019, 6000));
+
+        for (Vehicle v : vehicles) {
+            whatIsMyType(v);
+        }
+
 }
     
 }

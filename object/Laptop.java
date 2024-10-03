@@ -65,6 +65,7 @@ public class Laptop extends Computer { //extending from parent slide 12
         System.out.println("Shutting down...");
     }
 
+    
     @Override
     public void displaySpec() {
         System.out.println("This laptop specs: ");
@@ -76,6 +77,25 @@ public class Laptop extends Computer { //extending from parent slide 12
         System.out.println(this.getBattery());
         System.out.println(this.getScreenSize());
         System.out.println(this.getWeight());
+        }
+
+        //Overloading methods
+        public Integer computeArithmatic(){ //expect integer return
+
+            Integer a = 1;
+            Integer b = 2;
+            Integer sum;
+
+            sum = a + b;
+            return sum;
+        }
+
+        public Integer computeArithmatic(Integer a, Integer b){ //expect integer return
+
+            Integer sum;
+
+            sum = a + b;
+            return sum;
         }
 
 }

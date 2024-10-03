@@ -19,3 +19,12 @@
 
 ### overload means same function, diff parameter
 ### overriding means same method, diff outcome
+
+### what is "this."
+
+### on implement > quick fix to add all interface on parent doc
+
+### what is "static function"
+
+## for jar > cd target > jar -c -v -f sdf02l.jar -e App .
+## App is the main file

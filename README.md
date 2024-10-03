@@ -28,3 +28,6 @@
 
 ## for jar > cd target > jar -c -v -f sdf02l.jar -e App .
 ## App is the main file
+
+
+### javac --source-path . object/*.java vehicle/*.java ./*.java -d target App.java

@@ -10,6 +10,19 @@ import vehicle.Truck;
 import vehicle.Vehicle;
 
 public class App {
+
+    public static void whatIsMyType(Object obj) {  //global definition?
+        if (obj instanceof Car) {
+            System.out.println("This is a car");
+        }
+        else if (obj instanceof Truck) {
+            System.out.println("This is a truck");
+        }
+        else {
+            System.out.println("This is a vehicle");
+        }
+    }
+
 public static void main(String[] args) { // use for main function - function that gives output - normally the running one very short, everything done other class folder - the run button
     
     Computer computer = new Computer(); // need empty constructor
@@ -76,9 +89,11 @@ public static void main(String[] args) { // use for main function - function tha
         vehicles.add(new Car("100", "Audi", 1994, "Sedan", 5));
         vehicles.add(new Truck("999", "Toyota", 2019, 6000));
 
-        for (Vehicle v : vehicles) {
+        for (Vehicle v : vehicles) { //when was v defined?
             whatIsMyType(v);
         }
+
+        
 
 }
     
